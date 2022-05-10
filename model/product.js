@@ -63,13 +63,9 @@ const productSchema = Schema({
                 default:''
             }
         }
-    ],
-    user:{
-        type:Schema.ObjectId,
-        ref:'User',
-    }
+    ]
 });
 
 
 
-module.exports = mongoose.model('Review', ReviewSchema);
+module.exports = mongoose.model('Product', productSchema);
