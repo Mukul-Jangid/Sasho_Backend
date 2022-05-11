@@ -43,10 +43,6 @@ const userSchema = new Schema({
             type: Number,
             trim: true,
             //required: [true, 'Please provide a valid Phone number to contact']
-        },
-        categories: {
-            type: Schema.Types.ObjectId,
-            ref: "Category"
         }, 
         isActive: {
             type: Boolean,

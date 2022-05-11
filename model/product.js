@@ -35,6 +35,10 @@ const productSchema = Schema({
         type: Schema.Types.ObjectId,
         ref: 'Seller'
     },
+    category:{
+        type: Schema.Types.ObjectId,
+        ref:'Category'
+    },
     ratings:{
         type:Number,
         default:0
